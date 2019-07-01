@@ -32,7 +32,7 @@ class ProductController extends Controller
             'product_name' => 'required|min:5|max:125',
             'product_slug' => 'required',
             'product_description' => 'required',
-            'product_price ' => 'required'
+//            'product_price ' => 'required'
         ]);
         $inputs = $request->all();
         $productModel = new ProductModel();
@@ -49,7 +49,7 @@ class ProductController extends Controller
             'product_' => 'required|min:5|max:125',
             'product_slug' => 'required',
             'product_description' => 'required',
-            'product_price ' => 'required'
+//            'product_price ' => 'required'
         ]);
         $inputs = $request->all();
         $productModel = new ProductModel();
