@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="{{ asset("bs-simple-admin/assets/img/logo.png") }}" />
+                <img src="{{ secure_asset("bs-simple-admin/assets/img/logo.png") }}" />
 
             </a>
 

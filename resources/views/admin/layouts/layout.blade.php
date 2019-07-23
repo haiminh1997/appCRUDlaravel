@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield("title")</title>
     <!-- BOOTSTRAP STYLES-->
-    <link href=" {{ asset("bs-simple-admin/assets/css/bootstrap.css") }}" rel="stylesheet" />
+    <link href=" {{ secure_asset("bs-simple-admin/assets/css/bootstrap.css") }}" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
-    <link href=" {{ asset("bs-simple-admin/assets/css/font-awesome.css") }}" rel="stylesheet" />
+    <link href=" {{ secure_asset("bs-simple-admin/assets/css/font-awesome.css") }}" rel="stylesheet" />
     <!-- CUSTOM STYLES-->
-    <link href=" {{ asset("bs-simple-admin/assets/css/custom.css") }}" rel="stylesheet" />
+    <link href=" {{ secure_asset("bs-simple-admin/assets/css/custom.css") }}" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
+    <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
 </head>
 <body>
 
@@ -40,11 +46,11 @@
 <!-- /. WRAPPER  -->
 <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 <!-- JQUERY SCRIPTS -->
-<script src=" {{ asset("bs-simple-admin/assets/js/jquery-1.10.2.js") }}"></script>
+<script src=" {{ secure_asset("bs-simple-admin/assets/js/jquery-1.10.2.js") }}"></script>
 <!-- BOOTSTRAP SCRIPTS -->
-<script src=" {{ asset("bs-simple-admin/assets/js/bootstrap.min.js") }}"></script>
+<script src=" {{ secure_asset("bs-simple-admin/assets/js/bootstrap.min.js") }}"></script>
 <!-- CUSTOM SCRIPTS -->
-<script src=" {{ asset("bs-simple-admin/assets/js/custom.js") }}"></script>
+<script src=" {{ secure_asset("bs-simple-admin/assets/js/custom.js") }}"></script>
 
 
 </body>

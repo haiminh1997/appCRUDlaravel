@@ -8,7 +8,7 @@
     Hiển thị form xoá sản phẩm {{ $id }}
 
     <div class="container">
-        <form name="product" method="post" action="{{ url("admin/products/delete/$id") }}">
+        <form name="product" method="post" action="{{ secure_url("admin/products/delete/$id") }}">
 
             {{ csrf_field() }}
 

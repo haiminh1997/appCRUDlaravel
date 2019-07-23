@@ -17,7 +17,7 @@
     @endif
 
     <div class="container">
-        <form name="product" method="post" action="{{ url("admin/products") }}">
+        <form name="product" method="post" action="{{ secure_url("admin/products") }}">
 
             {{ csrf_field() }}
 
@@ -39,6 +39,7 @@
             <div class="form-group">
                 <label>Mô tả sản phẩm:</label>
                 <input type="text" class="form-control" name="product_description">
+                <textarea id="mytextarea" rows="4" cols="50" name="product_description"></textarea>
             </div>
 
             <button type="submit" class="btn btn-default">Submit</button>

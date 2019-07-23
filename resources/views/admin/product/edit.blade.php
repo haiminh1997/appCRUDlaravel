@@ -8,7 +8,7 @@
     Hiển thị form sửa sản phẩm {{ $product->id }}
 
     <div class="container">
-        <form name="product" method="post" action="{{ url("admin/products/edit/$product->id") }}">
+        <form name="product" method="post" action="{{ secure_url("admin/products/edit/$product->id") }}">
 
             {{ csrf_field() }}
 
