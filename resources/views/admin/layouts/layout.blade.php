@@ -11,7 +11,8 @@
     <!-- CUSTOM STYLES-->
     <link href=" {{ secure_asset("bs-simple-admin/assets/css/custom.css") }}" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
-    <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+    <script src='{{ secure_asset("tinymce_5.0.12/tinymce/js/tinymce/jquery.tinymce.min.js") }}' referrerpolicy="origin"></script>
+    <script src='{{ secure_asset("tinymce_5.0.12/tinymce/js/tinymce/tinymce.min.js") }}' referrerpolicy="origin"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <script>
         tinymce.init({
