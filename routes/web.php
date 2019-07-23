@@ -70,3 +70,7 @@ Route::prefix("admin")->group(function() {
     Route::post("/products/delete/{id}","Backend\ProductController@destroy");
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
